@@ -1,0 +1,10 @@
+node_modules
+*.log*
+.idea
+.nuxt
+.nitro
+.cache
+.output
+.env
+.yarn-error.log
+.yarn.lock
