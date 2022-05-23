@@ -7,7 +7,7 @@
 
 # Nuxt 3  + PrimeVue + UnoCss
 
-**Preview on [starry.netlify.app](https://starry.netlify.app)**
+**Preview on [stary.netlify.app](https://stary.netlify.app)**
 
 ## 🎉 星河万里
 
