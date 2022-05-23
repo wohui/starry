@@ -1,5 +1,6 @@
 <template>
   <div :class="containerClass" @click="onWrapperClick">
+    <Title> {{ metaTitle }}</Title>
     <AppTopBar @menu-toggle="onMenuToggle" />
     <div class="layout-sidebar" @click="onSidebarClick">
       <AppMenu :model="menu" @menuitem-click="onMenuItemClick" />
@@ -34,6 +35,7 @@ export default {
   },
   data() {
     return {
+      metaTitle: '星河鹭起',
       layoutMode: 'static',
       staticMenuInactive: false,
       overlayMenuActive: false,
@@ -46,6 +48,9 @@ export default {
               label: 'Dashboard',
               icon: 'pi pi-fw pi-home',
               to: '/',
+              meta: {
+                title: '首页入口',
+              },
             },
           ],
         },
@@ -63,11 +68,17 @@ export default {
               label: '3D按钮',
               icon: 'pi pi-fw pi-circle-off',
               to: '/buttons/3dButton',
+              meta: {
+                title: '3D按钮',
+              },
             },
             {
               label: '动画按钮',
               icon: 'pi pi-fw pi-vimeo',
               to: '/buttons/animateButton',
+              meta: {
+                title: '动画按钮',
+              },
             },
           ],
         },
@@ -144,6 +155,7 @@ export default {
       this.menuClick = true
     },
     onMenuItemClick(event) {
+      this.metaTitle = event.item.meta.title
       if (event.item && !event.item.items) {
         this.overlayMenuActive = false
         this.mobileMenuActive = false

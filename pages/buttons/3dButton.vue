@@ -29,7 +29,11 @@
     </div>
   </div>
 </template>
-
+<script setup>
+definePageMeta({
+  title: 'Some Page'
+})
+</script>
 <style scoped>
 .wrapper {
   width: 180px;

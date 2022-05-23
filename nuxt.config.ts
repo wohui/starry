@@ -3,18 +3,31 @@ import { defineNuxtConfig } from 'nuxt'
 import '@unocss/nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  head: {
-    // title: process.env.npm_package_name || '',
-    title: '星河万里_Starry' || '',
+  // meta: {
+  //   title: 'Starry-星河万里',
+  // },
+  meta: {
+    titleTemplate: 'Starry - %s',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, user-scalable=0',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: '网页设计，web前端，个性网页，优美网页，html5，nuxt3',
+      },
       {
         hid: 'description',
         name: 'description',
-        content: 'my website description'
-      }
+        content:
+          '一个精选了网页设计案例，特色网页、个性组件展示，美观常用的网页模板，CSS组件，基于Nuxt3+PrimeVue构建，优美的网页设计、网站展示，繁星点点组成了星河万里',
+      },
     ],
+    link: [],
+    script: [],
   },
   build: {
     // transpile: ['primevue','tone', 'standardized-audio-context'],
