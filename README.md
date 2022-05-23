@@ -1,8 +1,23 @@
-# Nuxt 3 Minimal Starter
+<p align="center">
+  <img width="160" src="./public/images/logo-white.svg">
+</p>
+<p align="center">
+    <span>繁星点点，带来星河万里 - Starry</span>
+</p>
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# Nuxt 3  + PrimeVue + UnoCss
 
-## Setup
+**Preview on [starry.netlify.app](https://starry.netlify.app)**
+
+## 🎉 星河万里
+
+- 🌟 精美的组件
+- 🗻 精选的页面
+- ☁️ 设计的灵感
+- 🌍 好看的网页
+- ⏳ 新技术
+
+## Start
 
 Make sure to install the dependencies:
 
@@ -13,8 +28,6 @@ yarn install
 # npm
 npm install
 
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -23,6 +36,8 @@ Start the development server on http://localhost:3000
 
 ```bash
 npm run dev
+or 
+yarn dev
 ```
 
 ## Production
@@ -38,5 +53,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
